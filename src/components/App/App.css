@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+
+h1 {
+  margin: auto;
+}
+
+.flipbook {
+  margin: auto;
+}
+
+.demoPage {
+  display: flex;
+  margin: auto;
+  background-image: url("../../../public/paper-background.jpg");
+  box-shadow: 5px 10px 50px #888888;
+}
