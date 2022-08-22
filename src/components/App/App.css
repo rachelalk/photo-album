@@ -1,25 +1,137 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .App {
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
 }
 
 h1 {
-  margin: auto;
+	margin: auto;
 }
 
 .flipbook {
-  margin: auto;
+	margin: auto;
 }
 
-.demoPage {
-  display: flex;
-  margin: auto;
-  background-image: url("../../../public/paper-background.jpg");
-  box-shadow: 5px 10px 50px #888888;
+.frontPage {
+	display: flex;
+	flex-direction: row;
+}
+
+.frontPage-left,
+.frontPage-right {
+	background-color: #f2a65a;
+}
+
+.frontPage-left {
+	display: flex !important;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 100%;
+	width: 500;
+	height: 600;
+	justify-content: space-between;
+	box-shadow: -15px 10px 50px #888888;
+}
+
+.typewriter {
+	display: flex;
+	width: 80%;
+}
+
+.frontPage-right {
+	box-shadow: 15px 10px 50px #888888;
+}
+
+.left-bar {
+	display: flex;
+	height: 100%;
+	width: 10%;
+	background-color: #585123;
+}
+
+.photoPage {
+	display: flex;
+	margin: auto;
+	background-image: url("../../../public/paper-background.jpg");
+	box-shadow: 5px 10px 50px #888888;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+.wrapper {
+	height: 40%;
+	width: 60%;
+	color: #772f1a;
+	font-family: "Major Mono Display", monospace;
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.line__1,
+.line__2 {
+	white-space: nowrap; /* keep text in one line */
+	overflow: hidden; /* hide text behind the cursor */
+	margin: 0.5rem auto;
+	font-family: "Major Mono Display", monospace;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.line__1 {
+	border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+	/* define animation types for text + cursor */
+	animation: animated-text__1 6s steps(30, end) 1s 1 normal both,
+		animated-cursor__1 900ms steps(30, end) 8;
+}
+
+.line__2 {
+	border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+	/* define animation types for text + cursor */
+	animation: animated-text__2 5s steps(30, end) 1s 1 normal both,
+		animated-cursor__2 900ms steps(30, end) infinite;
+	-webkit-animation-delay: 7s;
+	animation-delay: 7s;
+}
+
+@keyframes animated-cursor__1 {
+	from {
+		border-right-color: rgba(17, 17, 17, 0.9);
+	}
+	to {
+		border-right-color: rgba(255, 255, 255, 0.8);
+	}
+}
+
+@keyframes animated-cursor__2 {
+	from {
+		border-right-color: rgba(17, 17, 17, 0.9);
+	}
+	to {
+		border-right-color: rgba(255, 255, 255, 0.8);
+	}
+}
+
+@keyframes animated-text__1 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 20rem;
+	}
+}
+
+@keyframes animated-text__2 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 18rem;
+	}
 }
