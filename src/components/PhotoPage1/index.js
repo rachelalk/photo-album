@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 
 const PhotoPage1 = () => {
 	return (
-		<motion.div
-			className="box"
+		<motion.div className="lenny-garden"
 			animate={{
 				scale: [0.5, 0.3, 0.3, 0.5, 0.5],
 				rotate: [0, 0, 85, 85, 0],
@@ -18,8 +17,9 @@ const PhotoPage1 = () => {
 				repeatDelay: 1,
 			}}
 		>
-			<img src="./lenny.jpeg" />{" "}
+			<img className="page1-image" src="./lenny.jpeg" />{" "}
 		</motion.div>
+		
 	);
 };
 

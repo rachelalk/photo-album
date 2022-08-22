@@ -1,6 +1,9 @@
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
 import PhotoPage1 from "../PhotoPage1";
+import Typewriter from "../Typewriter";
+import Page1Text from "../Page1Text";
+
 
 function Flipbook(props) {
 	return (
@@ -16,11 +19,16 @@ function Flipbook(props) {
 				</div>
 			</div>
 
-			<div className="frontPage-right"></div>
+			<div className="frontPage-right">
+				<Page1Text/>
+			</div>
 			<div className="photoPage">
 				<PhotoPage1 />
+				
 			</div>
-			<div className="photoPage">Page 4</div>
+			<div className="photoPage">
+		
+			</div>
 			<div className="photoPage">Page 5</div>
 			<div className="photoPage">Page 6</div>
 			<div className="photoPage">Page 7</div>
