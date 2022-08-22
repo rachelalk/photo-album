@@ -5,7 +5,8 @@
 
 .App {
 	display: flex;
-	width: 100vw;
+	width: 90vw;
+	margin: auto;
 	flex-direction: column;
 }
 
@@ -23,24 +24,32 @@ h1 {
 }
 
 .frontPage-left,
+.frontPage-right,
+.photoPage {
+	display: flex !important;
+	/* height: 80vh;
+	width: 40vw; */
+	margin: auto;
+	/* overflow: hidden; */
+}
+
+.frontPage-left,
 .frontPage-right {
 	background-color: #f2a65a;
 }
 
 .frontPage-left {
-	display: flex !important;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	height: 100%;
-	width: 500;
-	height: 600;
-	justify-content: space-between;
+
 	box-shadow: -15px 10px 50px #888888;
 }
 
 .typewriter {
 	display: flex;
-	width: 80%;
+	width: 70%;
+	margin-left: 3%;
+
 }
 
 .frontPage-right {
@@ -55,8 +64,6 @@ h1 {
 }
 
 .photoPage {
-	display: flex;
-	margin: auto;
 	background-image: url("../../../public/paper-background.jpg");
 	box-shadow: 5px 10px 50px #888888;
 }
@@ -65,10 +72,9 @@ h1 {
 
 .wrapper {
 	height: 40%;
-	width: 60%;
+	width: 40%;
 	color: #772f1a;
 	font-family: "Major Mono Display", monospace;
-	margin-left: 10%;
 	margin-top: 5%;
 }
 
@@ -76,9 +82,9 @@ h1 {
 .line__2 {
 	white-space: nowrap; /* keep text in one line */
 	overflow: hidden; /* hide text behind the cursor */
-	margin: 0.5rem auto;
+	margin-left: 0px;
 	font-family: "Major Mono Display", monospace;
-	font-size: 2rem;
+	font-size: 3vw;
 	font-weight: bold;
 }
 
