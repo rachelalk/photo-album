@@ -1,11 +1,11 @@
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
-
-
+import PhotoPage1 from "../PhotoPage1";
 
 function Flipbook(props) {
 	return (
-		<HTMLFlipBook className="flipbook" width={400} height={600} size="stretch">
+		<HTMLFlipBook className="flipbook" width={600} height={500} size="stretch">
+			<div className="hidden-page"></div>
 			<div className="frontPage-left">
 				<div className="left-bar"></div>
 				<div className="typewriter">
@@ -17,7 +17,9 @@ function Flipbook(props) {
 			</div>
 
 			<div className="frontPage-right">Page 2</div>
-			<div className="photoPage">Page 3</div>
+			<div className="photoPage">
+				<PhotoPage1 />
+			</div>
 			<div className="photoPage">Page 4</div>
 			<div className="photoPage">Page 5</div>
 			<div className="photoPage">Page 6</div>
@@ -27,7 +29,4 @@ function Flipbook(props) {
 	);
 }
 
-
-export default Flipbook
-
-
+export default Flipbook;
