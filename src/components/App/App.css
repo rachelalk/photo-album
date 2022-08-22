@@ -48,7 +48,7 @@ h1 {
 
 .typewriter {
 	display: flex;
-	width: 80%;
+	width: 45vw;
 	margin-left: 3%;
 
 }
@@ -77,7 +77,7 @@ h1 {
 
 .wrapper {
 	height: 40%;
-	width: 40%;
+	width: 45vw;
 	color: #772f1a;
 	font-family: "Major Mono Display", monospace;
 	margin-top: 5%;
@@ -134,7 +134,7 @@ h1 {
 		width: 0;
 	}
 	to {
-		width: 30vw;
+		width: 45vw;
 	}
 }
 
@@ -143,6 +143,6 @@ h1 {
 		width: 0;
 	}
 	to {
-		width: 25vw;
+		width: 35vw;
 	}
 }

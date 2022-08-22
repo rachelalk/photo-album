@@ -16,7 +16,7 @@ function Flipbook(props) {
 				</div>
 			</div>
 
-			<div className="frontPage-right">Page 2</div>
+			<div className="frontPage-right"></div>
 			<div className="photoPage">
 				<PhotoPage1 />
 			</div>
