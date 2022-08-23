@@ -1,7 +1,6 @@
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
 import PhotoPage1 from "../PhotoPage1";
-import Typewriter from "../Typewriter";
 import Page1Text from "../Page1Text";
 
 
